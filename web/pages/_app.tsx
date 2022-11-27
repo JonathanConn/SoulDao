@@ -20,6 +20,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           <ChakraProvider>
 
             <MainLayout>
+              
               <Component {...pageProps} />
             </MainLayout>
 
