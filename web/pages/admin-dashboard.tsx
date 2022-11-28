@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
-import PageLayout from "../components/layouts/PageLayout"
 
 import { ethers } from "ethers";
 import { useEthersContext } from "../context/EthersProvider"
@@ -56,8 +55,7 @@ export default function Home() {
     checkForAdminNFT()    
   }, [mm, provider])
 
-  return (
-    <PageLayout containerClassName="bg-gray-50">
+  return (    
       <div className="w-full min-h-screen bg-cover">
         <div className="text-center mt-32">
           <h1 className="font-bold text-6xl leading-tight">
@@ -70,7 +68,6 @@ export default function Home() {
 
           </div>
         </div>
-      </div>
-    </PageLayout>
+      </div>    
   )
 }
