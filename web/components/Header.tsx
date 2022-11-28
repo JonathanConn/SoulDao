@@ -22,7 +22,7 @@ const Header: FC<HeaderProps> = ({}) => {
             className="text-extrabold text-4xl w-32 flex items-center justify-center"
             onClick={() => router.push("/")}
           >
-            <h2>SpendDAO</h2>
+            <h2>Soul</h2>
           </button>
 
           <div className="flex items-center space-x-6 z-50">

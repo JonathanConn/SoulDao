@@ -13,6 +13,7 @@ export default function Home() {
   const [activeChoice, setActiveChoice] = useState(UserChoice.EndUser)
 
   return (
+    
     <div className="flex h-screen">
       <div className="grid grid-flow-row auto-rows-max gap-4 place-content-center m-auto">
 
@@ -22,7 +23,7 @@ export default function Home() {
 
         <FireFoot />
       </div>
-    </div>
+    </div>    
 
   )
 }

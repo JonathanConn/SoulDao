@@ -8,6 +8,7 @@ import { MMProvider } from "../context/MMProvider" // custom mm context provider
 import "../styles/globals.css"
 import Image from "next/image"
 import FireFoot from "../components/footerAnimation"
+import MainLayout from "../components/layouts/MainLayout"
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -22,8 +23,9 @@ const App = ({ Component, pageProps }: AppProps) => {
 
             <div data-theme="autumn" className="font-mono bg-neutral-content">
               {/* className="bg-gradient-to-l from-primary to-secondary hover:bg-gradient-to-r" */}
-              <Component {...pageProps} />                
-              
+              <MainLayout>
+                <Component {...pageProps} />
+              </MainLayout>
             </div>
 
 
