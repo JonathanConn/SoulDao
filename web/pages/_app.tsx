@@ -20,7 +20,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
           <ChakraProvider>
 
-            <div data-theme="autumn" className="font-mono">
+            <div data-theme="autumn" className="font-mono bg-neutral-content">
               {/* className="bg-gradient-to-l from-primary to-secondary hover:bg-gradient-to-r" */}
               <Component {...pageProps} />                
               
