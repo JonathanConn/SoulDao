@@ -5,30 +5,36 @@ import { MetaMaskProvider } from 'metamask-react'
 import { EthersProvider } from '../context/EthersProvider'
 import { MMProvider } from "../context/MMProvider" // custom mm context provider
 
-import MainLayout from "../components/layouts/MainLayout"
 import "../styles/globals.css"
-
+import Image from "next/image"
+import FireFoot from "../components/footerAnimation"
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
 
+
     <MetaMaskProvider>
 
-        <MMProvider> 
+      <MMProvider>
         <EthersProvider>
-          
+
           <ChakraProvider>
 
-            <MainLayout>
-              <Component {...pageProps} />
-            </MainLayout>
+            <div data-theme="autumn" className="font-mono">
+              {/* className="bg-gradient-to-l from-primary to-secondary hover:bg-gradient-to-r" */}
+              <Component {...pageProps} />                
+              
+            </div>
+
 
           </ChakraProvider>
 
         </EthersProvider>
-        </MMProvider>
+      </MMProvider>
 
     </MetaMaskProvider>
+
+
   )
 }
 
