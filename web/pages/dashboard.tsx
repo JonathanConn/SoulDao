@@ -20,11 +20,11 @@ export default function Home() {
 
             ) : (
               <>
-                <h1 className="font-bold text-6xl leading-tight">
+                <h3 className="font-bold text-5xl leading-tight">
                   Dashboard
-                </h1>
+                </h3>
                 <button
-                  className="block mx-auto text-bold text-xl rounded-xl mt-5 px-16 py-2"
+                  className="btn btn-secondary-context block mx-auto text-bold text-xl rounded-xl mt-5 px-16 py-2"
                   onClick={() => router.push("/join")}
                 >
                   Mint

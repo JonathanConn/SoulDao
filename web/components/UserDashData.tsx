@@ -108,7 +108,7 @@ export default function UserDashData() {
             return (
               <div
                 key={index}
-                className="flex items-center justify-between rounded-lg bg-white py-5 px-8 shadow-md"
+                className="flex items-center justify-between rounded-lg bg-base-200 py-5 px-8 shadow-md"
               >
                 <div className="flex flex-col items-start">
                   <p className="text-bold text-gray-500">Token Name</p>
@@ -128,7 +128,7 @@ export default function UserDashData() {
                 </div>
 
                 <button
-                  className="ml-8 bg-violet-600 text-white text-bold text-md rounded-md px-6 py-2"
+                  className="btn btn-error ml-8 text-bold text-md rounded-md px-6 py-2"
                   disabled={!!isBurning}
                   onClick={() => burnToken(nft?.items[0].id)}
                 >

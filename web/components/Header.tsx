@@ -37,7 +37,7 @@ const Header: FC<HeaderProps> = ({}) => {
               </button>
             ) : (
               <button
-                className="text-bold text-md rounded-xl py-2 px-6"
+                className="btn btn-primary text-bold text-md rounded-xl py-2 px-6"
                 onClick={mm.connect}
               >
                 Sign in with wallet
